@@ -1,0 +1,63 @@
+header {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+  }
+
+  #main-menu {
+    display: flex; /* Використовуємо flexbox для горизонтального меню */
+    justify-content: space-between; /* Розподіляємо елементи по краях */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+  }
+
+  #main-menu ul {
+    list-style: none; /* Прибираємо стандартні маркери списку */
+    margin: 0; /* Обнуляємо відступи */
+    padding: 0; /* Обнуляємо внутрішній відступ */
+  }
+
+  #main-menu li {
+    display: inline-block; /* Елементи меню будуть блочними */
+    margin-right: 20px; /* Додаємо відступи між пунктами меню */
+  }
+
+  #main-menu a {
+    text-decoration: none; /* Прибираємо підкреслення */
+    color: #333; /* Колір тексту */
+    padding: 10px 15px;
+  }
+
+  #main-menu a:hover {
+    color: #007bff; /* Колір при наведенні курсору */
+  }
+
+  /* Стили для підменю (за бажанням) */
+  #main-menu ul ul {
+    position: absolute; /* Позиціонування для підменю */
+    display: none; /* Спочатку підменю приховане */
+    background-color: #fff; /* Колір фону підменю */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Тінь підменю */
+  }
+
+  #main-menu li:hover ul {
+    display: block; /* Відображаємо підменю при наведенні курсору */
+  }
+
+  #main-menu ul ul li {
+    margin-left: 20px; 
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  #main-content {
+      padding: 20px;
+      }
+
+  #page-1, #page-2, #page-3 {
+      display: none; /* Спочатку всі сторінки приховано */
+      }
+
+  #page-1 {
+      display: block; /* Сторінка 1 буде показана за замовчуванням */
+      }
